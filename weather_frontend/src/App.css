@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Lilita+One&family=Orbitron:wght@400..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #CC0000;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'SUSE Mono', cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 1rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.cityPart {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white;
+}
+
+.buttonDiv {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  height: 4rem;
+  width: 60vw;
+  font-size: 2rem;
+  padding: 0 5px;
+  text-shadow: 2px 2px 5px white;
+  transition: border-color 3s ease;
+}
+
+button {
+  height: 10vh;
+  width: 20vw;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: none;
+  background-color: #FFFF00;
+  backdrop-filter: blur(5rem);
+  color: black;
+  padding: 10px;
+  box-shadow: 5px 5px 20px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+button:hover {
+  background-color: #990099;
+  border: 1px solid black;
+  color: black;
+  transform: scale(1.1);
+}
+
+.informations {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 5px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 1rem;  
+}
+
+.copyright div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  margin-top: 1rem;
+  width: 20vw;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+i:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  input {
+    width: 60vw;
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.6rem;
+  }
+
+  i {
+    width: 30vw;
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .cityPart {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 80vw;
+    font-size: 1.2rem;
+    height: 3rem;
+  }
+
+  button {
+    width: 60vw;
+    height: 7vh;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  i {
+    width: 40vw;
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cityPart {
+    font-size: 1.2rem;
+  }
+
+  input {
+    width: 90vw;
+    font-size: 1rem;
+    height: 2.5rem;
+  }
+
+  button {
+    width: 70vw;
+    height: 6vh;
+    font-size: 1rem;
+  }
+
+  i {
+    width: 50vw;
+    font-size: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+}
